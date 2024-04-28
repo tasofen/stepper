@@ -1,6 +1,3 @@
-
-
-
 // Два средних поменяны местыми. Неправильная распайка
 int8_t motorMode[] = {
   0b1000,
@@ -50,7 +47,6 @@ void setup() {
 
 void sleepAndInput() {
   uint32_t start = millis();
-  int n = 0;
 
   if (autoReverse && millis() - lastReverseTimeChange > REVERS_ITERATION_TIME) {
     reverse = (reverse + 1) % 2;
